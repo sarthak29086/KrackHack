@@ -1,9 +1,119 @@
-/* src/index.css */
+/* Global Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    text-align: center;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #121212; /* Deeper dark background */
+  color: #e0e0e0; /* Light gray text for better readability */
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  line-height: 1.6; /* Improved line spacing */
+}
+
+/* Title */
+h1 {
+  color: #64dd17; /* Brighter, more vibrant green */
+  font-size: 2.5em; /* Larger title */
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+/* Text Input */
+textarea {
+  width: 60%; /* Wider input */
+  height: 150px; /* Taller input */
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #202020;
+  color: #e0e0e0;
+  resize: vertical;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #64dd17; /* Highlight on focus */
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  display: inline-block; /* Inline block for better layout control */
+  margin: 15px auto;
+  background-color: #64dd17;
+  color: #121212; /* Dark text for contrast */
+  border: none;
+  padding: 14px 30px; /* Larger padding */
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
+}
+
+button:hover {
+  background-color: #4caf50; /* Slightly darker green */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Link Styling */
+a {
+  color: #64dd17;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #4caf50;
+}
+
+/* Output Box */
+.json-container, .output-container {
+  width: 60%; /* Wider output boxes */
+  margin: 30px auto; /* Increased margin */
+  background-color: #202020;
+  color: #e0e0e0;
+  padding: 25px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  max-height: 400px; /* Increased max height */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Center Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligned to the top */
+  min-height: 100vh; /* changed height to min-height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  textarea, .json-container, .output-container {
+      width: 90%;
   }
-  
+
+  button {
+      width: 90%;
+      padding: 16px;
+  }
+}
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
