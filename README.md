@@ -1,4 +1,4 @@
-is an AI-powered web application generator that takes a user-provided idea and generates a fully functional website. It integrates multiple AI agents to process user input, generate HTML pages, and deploy the website automatically to GitHub Pages.
+It is an AI-powered web application generator that takes a user-provided idea and generates a fully functional website. It integrates multiple AI agents to process user input, generate HTML pages, and deploy the website automatically to GitHub Pages.
 
 How to Run the Project
 Follow the steps below to set up and run the project on your local machine:
