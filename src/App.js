@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Octokit } from "@octokit/rest";
 
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "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";
 const GITHUB_USERNAME = "sarthak29086"; // Your GitHub username
 
 const AmplifierApp = () => {
